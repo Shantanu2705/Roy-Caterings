@@ -13,35 +13,20 @@ const ContactClient = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => 
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setStatus({ loading: true, error: null, success: false });
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.message || 'Something went wrong');
-      }
-
-      setStatus({ loading: false, error: null, success: true });
-      setFormData({ name: '', phone: '', email: '', eventType: '', guests: '', eventDate: '', message: '' });
-      
-      // WhatsApp fallback or secondary action (optional, based on old logic)
-      // Format the message for WhatsApp
+      // Direct to WhatsApp logic
       const whatsappMessage = `Hello Roy Caterers,%0A%0AI would like to request a quote for an event.%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Email:* ${formData.email}%0A*Event Type:* ${formData.eventType}%0A*Guests:* ${formData.guests}%0A*Date:* ${formData.eventDate}%0A%0A*Message:*%0A${formData.message}`;
       const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '919933762891';
       const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+      
       window.open(whatsappLink, '_blank');
       
+      setStatus({ loading: false, error: null, success: true });
+      setFormData({ name: '', phone: '', email: '', eventType: '', guests: '', eventDate: '', message: '' });
     } catch (err: any) {
       setStatus({ loading: false, error: err.message, success: false });
     }
