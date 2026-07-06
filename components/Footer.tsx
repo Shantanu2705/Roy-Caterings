@@ -70,9 +70,19 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-        <p>&copy; {new Date().getFullYear()} Roy Services. All rights reserved.</p>
-        <div className="flex gap-4 mt-4 md:mt-0">
+      <div className="container mx-auto px-6 md:px-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-4 md:gap-0">
+        <div className="flex-1 text-center md:text-left">
+          <p>&copy; {new Date().getFullYear()} Roy Services. All rights reserved.</p>
+        </div>
+        <div className="flex-1 text-center">
+          <p>
+            Designed by{' '}
+            <a href="https://digitaldictionary.in/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors underline">
+              Digital Dictionary
+            </a>
+          </p>
+        </div>
+        <div className="flex-1 flex justify-center md:justify-end gap-4">
           <Link href="/privacy" className="hover:text-gold transition-colors">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-gold transition-colors">Terms of Service</Link>
         </div>
