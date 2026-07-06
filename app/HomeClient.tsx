@@ -50,7 +50,7 @@ const HomeClient = () => {
               Premium Catering Services for Every Celebration
             </h1>
             <p className="text-lg md:text-xl text-ivory mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-              Creating unforgettable dining experiences across Siliguri with exceptional food, flawless service, and elegant presentation.
+              Creating unforgettable dining experiences across Bagdogra, Siliguri with exceptional food, flawless service, and elegant presentation.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/contact" className="btn-primary bg-gold text-charcoal hover:bg-white w-full sm:w-auto">
@@ -140,7 +140,7 @@ const HomeClient = () => {
             <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">Why Choose Roy Services?</h2>
             <div className="w-24 h-1 bg-gold mb-8"></div>
             <p className="text-gray-400 mb-8 leading-relaxed">
-              With over a decade of excellence in the hospitality industry, we bring unparalleled expertise, creativity, and passion to every event we cater in Siliguri and beyond.
+              With over a decade of excellence in the hospitality industry, we bring unparalleled expertise, creativity, and passion to every event we cater in Bagdogra, Siliguri and beyond.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

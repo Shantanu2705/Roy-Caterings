@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair-display', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: 'Roy Services - Premium Catering in Siliguri',
-  description: 'Creating unforgettable dining experiences across Siliguri with exceptional food, flawless service, and elegant presentation.',
+  title: 'Roy Services - Premium Catering in Bagdogra, Siliguri',
+  description: 'Creating unforgettable dining experiences across Bagdogra, Siliguri with exceptional food, flawless service, and elegant presentation.',
 };
 
 export default function RootLayout({

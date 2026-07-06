@@ -1,6 +1,6 @@
 # Roy Services - Premium Catering
 
-This is the production-ready Next.js 15 application for **Roy Services**, a premium catering company based in Siliguri, West Bengal. 
+This is the production-ready Next.js 15 application for **Roy Services**, a premium catering company based in Bagdogra, Siliguri, West Bengal. 
 
 The website has been optimized and migrated to the Next.js App Router for optimal performance, edge deployment, and SEO.
 

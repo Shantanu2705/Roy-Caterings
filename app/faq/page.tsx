@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'FAQ | Roy Services',
-  description: 'Frequently Asked Questions about our premium catering services in Siliguri.',
+  description: 'Frequently Asked Questions about our premium catering services in Bagdogra, Siliguri.',
 };
 
 export default function Page() {

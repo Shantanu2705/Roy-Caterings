@@ -14,7 +14,7 @@ const Footer = () => {
             <img src="/logo.jpeg" alt="Roy Services Logo" className="h-20 md:h-24 w-auto object-contain bg-white rounded-md p-2 shadow-sm" onError={(e) => { (e.target as HTMLImageElement).style.display='none'; }} />
           </Link>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
-            Creating unforgettable dining experiences across Siliguri with exceptional food, flawless service, and elegant presentation.
+            Creating unforgettable dining experiences across Bagdogra, Siliguri with exceptional food, flawless service, and elegant presentation.
           </p>
           <div className="flex gap-4">
             <a href="https://www.facebook.com/share/1ChQDnLhdy/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:text-gold hover:border-gold transition-colors">
@@ -55,9 +55,12 @@ const Footer = () => {
               <MapPin className="text-gold shrink-0 mt-1" size={20} />
               <span>Bagdogra Bhujiyapani,<br />Darjeeling, West Bengal, Pin: 734014</span>
             </li>
-            <li className="flex items-center gap-3 text-gray-400 hover:text-gold transition-colors">
-              <Phone className="text-gold shrink-0" size={20} />
-              <a href="tel:+919933762891">+91 9933762891</a>
+            <li className="flex items-start gap-3 text-gray-400">
+              <Phone className="text-gold shrink-0 mt-1" size={20} />
+              <div className="flex flex-col gap-1">
+                <a href="tel:+919933762891" className="hover:text-gold transition-colors">+91 9933762891</a>
+                <a href="tel:+917679654927" className="hover:text-gold transition-colors">+91 7679654927</a>
+              </div>
             </li>
             <li className="flex items-center gap-3 text-gray-400 hover:text-gold transition-colors">
               <Mail className="text-gold shrink-0" size={20} />

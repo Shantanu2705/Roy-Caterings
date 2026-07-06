@@ -51,7 +51,7 @@ const PrivacyClient = () => {
 
             <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">5. Contact Us</h2>
             <p className="mb-4 leading-relaxed">
-              If you have any questions about this Privacy Policy, please contact us at roycaterer251@gmail.com or call us at +91 9933762891.
+              If you have any questions about this Privacy Policy, please contact us at <a href="mailto:roycaterer251@gmail.com" className="text-gold hover:underline">roycaterer251@gmail.com</a> or call us at <a href="tel:+919933762891" className="text-gold hover:underline">+91 9933762891</a> or <a href="tel:+917679654927" className="text-gold hover:underline">+91 7679654927</a>.
             </p>
           </div>
         </div>

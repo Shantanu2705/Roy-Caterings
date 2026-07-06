@@ -29,7 +29,7 @@ const AboutClient = () => {
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-charcoal mb-6">A Passion for Gastronomy</h2>
             <div className="w-24 h-1 bg-gold mb-8"></div>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Founded in Siliguri, Roy Services began with a simple vision: to elevate local events with exceptional food and world-class service. Over the years, we have grown from a small family operation into the region's most trusted premium catering brand.
+              Founded in Bagdogra, Siliguri, Roy Services began with a simple vision: to elevate local events with exceptional food and world-class service. Over the years, we have grown from a small family operation into the region's most trusted premium catering brand.
             </p>
             <p className="text-gray-600 leading-relaxed">
               We believe that food is more than sustenance; it's an experience that brings people together, creates memories, and celebrates life's most precious moments.

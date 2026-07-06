@@ -68,7 +68,10 @@ const ContactClient = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-charcoal mb-1">Phone</h4>
-                    <p>+91 9933762891</p>
+                    <div className="flex flex-col gap-1">
+                      <a href="tel:+919933762891" className="hover:text-gold transition-colors">+91 9933762891</a>
+                      <a href="tel:+917679654927" className="hover:text-gold transition-colors">+91 7679654927</a>
+                    </div>
                   </div>
                 </li>
                 <li className="flex items-start gap-4 text-gray-600">
