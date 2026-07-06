@@ -59,7 +59,7 @@ const ContactClient = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-charcoal mb-1">Our Office</h4>
-                    <p>Bagdogra Bhujiyapani,<br />Darjeeling, West Bengal, Pin: 734014</p>
+                    <p>Bagdogra Bhujiyapani,<br />Darjeeling, Siliguri, West Bengal, Pin: 734014</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4 text-gray-600">
