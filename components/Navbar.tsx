@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           {/* Using mix-blend-multiply so the JPEG background perfectly merges with the navbar */}
-          <img src="/logo.jpeg" alt="Roy Services Logo" className="h-16 md:h-20 w-auto object-contain mix-blend-multiply" onError={(e) => { (e.target as HTMLImageElement).style.display='none'; }} />
+          <img src="/logo.png" alt="Roy Services Logo" className="h-16 md:h-20 w-auto object-contain mix-blend-multiply" onError={(e) => { (e.target as HTMLImageElement).style.display='none'; }} />
         </Link>
 
         {/* Desktop Nav */}

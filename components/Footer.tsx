@@ -11,7 +11,7 @@ const Footer = () => {
         {/* Brand */}
         <div className="col-span-1 md:col-span-1">
           <Link href="/" className="flex items-center gap-2 mb-6">
-            <img src="/logo.jpeg" alt="Roy Services Logo" className="h-20 md:h-24 w-auto object-contain bg-white rounded-md p-2 shadow-sm" onError={(e) => { (e.target as HTMLImageElement).style.display='none'; }} />
+            <img src="/logo.png" alt="Roy Services Logo" className="h-20 md:h-24 w-auto object-contain bg-white rounded-md p-2 shadow-sm" onError={(e) => { (e.target as HTMLImageElement).style.display='none'; }} />
           </Link>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
             Creating unforgettable dining experiences across Bagdogra, Siliguri with exceptional food, flawless service, and elegant presentation.
