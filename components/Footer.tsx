@@ -70,19 +70,105 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-4 md:gap-0">
+      {/* Digital Dictionary Banner */}
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 py-8">
+        <div className="relative w-full max-w-5xl mx-auto group hover:scale-[1.01] transition-transform duration-300">
+          <style>{`
+            @keyframes subtle-blink {
+              0%, 100% { opacity: 1; filter: drop-shadow(0 0 0px rgba(255,255,255,0)); }
+              50% { opacity: 0.9; filter: drop-shadow(0 0 15px rgba(255,255,255,0.1)); transform: scale(0.995); }
+            }
+            .animate-blink {
+              animation: subtle-blink 3s ease-in-out infinite;
+            }
+            .torn-bg {
+              filter: url(#torn-filter);
+            }
+          `}</style>
+          
+          <svg width="0" height="0" className="absolute">
+            <filter id="torn-filter">
+              <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+              <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+          </svg>
+
+          <a 
+            href="https://www.digitaldictionarysiliguri.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block w-full relative animate-blink"
+          >
+            {/* Background layers with torn edge */}
+            {/* Darker than charcoal background (#181818) for the torn paper effect */}
+            <div className="absolute inset-0 torn-bg bg-[#181818] shadow-2xl"></div>
+            <div className="absolute inset-[4px] md:inset-[8px] torn-bg bg-white"></div>
+            
+            {/* Content layer */}
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between p-6 sm:p-10 lg:p-12 h-full">
+              
+              {/* Left side: Text */}
+              <div className="flex-1 w-full text-center md:text-left">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#113320] mb-6 tracking-tight uppercase" style={{ textShadow: '1px 1px 0px rgba(0,0,0,0.05)' }}>
+                  Comprehensive Agency Solutions
+                </h3>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-3 mb-8 w-fit mx-auto md:mx-0">
+                  {[
+                    "Website Development", "Digital Marketing",
+                    "Performance Marketing", "Google Ads",
+                    "Software Development", "Mobile App",
+                    "SEO", "ORM"
+                  ].map(service => (
+                    <div key={service} className="flex items-center gap-3 text-gray-800 font-medium text-sm sm:text-base md:text-lg">
+                      <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#113320] flex-shrink-0 shadow-sm"></span>
+                      <span>{service}</span>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="text-gray-900 font-bold text-base sm:text-xl md:text-2xl hover:text-[#113320] transition-colors inline-block">
+                  www.digitaldictionarysiliguri.com
+                </div>
+              </div>
+              
+              {/* Right side: Recreated Logo */}
+              <div className="w-full md:w-auto mt-10 md:mt-0 flex flex-col items-center justify-center pl-0 md:pl-8 lg:pl-12 md:border-l-2 border-gray-100">
+                <div className="relative w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 flex items-center justify-center rounded-full shadow-[0_10px_30px_rgba(212,175,55,0.2)]">
+                  {/* Outer golden rings */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#f9f295] via-[#b8860b] to-[#f9f295] p-[3px] sm:p-[4px]">
+                    <div className="w-full h-full rounded-full bg-white flex items-center justify-center p-[4px] sm:p-[5px]">
+                      <div className="w-full h-full rounded-full bg-gradient-to-bl from-[#e0aa3e] via-[#f9f295] to-[#b8860b] p-[2px]">
+                         <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                            {/* Big 'D' */}
+                            <div className="text-6xl sm:text-7xl md:text-8xl font-black bg-gradient-to-br from-[#f9f295] via-[#d4af37] to-[#8c6200] text-transparent bg-clip-text font-serif italic pr-2 sm:pr-3" style={{ filter: 'drop-shadow(2px 3px 1px rgba(0,0,0,0.1))' }}>
+                              D
+                            </div>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-5 text-center">
+                  <div className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-[#8c6200] via-[#d4af37] to-[#8c6200] text-transparent bg-clip-text font-serif leading-none drop-shadow-sm">
+                    Digital Dictionary
+                  </div>
+                  <div className="text-xs sm:text-sm tracking-[0.25em] font-bold text-[#b8860b] mt-2 uppercase">
+                    Siliguri
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-6 md:px-12 pt-6 pb-2 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-4 md:gap-0">
         <div className="flex-1 text-center md:text-left">
           <p>&copy; {new Date().getFullYear()} Roy Services. All rights reserved.</p>
         </div>
-        <div className="flex-1 text-center">
-          <p>
-            Designed by{' '}
-            <a href="https://digitaldictionary.in/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors underline">
-              Digital Dictionary
-            </a>
-          </p>
-        </div>
-        <div className="flex-1 flex justify-center md:justify-end gap-4">
+        <div className="flex-1 flex justify-center md:justify-end gap-6">
           <Link href="/privacy" className="hover:text-gold transition-colors">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-gold transition-colors">Terms of Service</Link>
         </div>
