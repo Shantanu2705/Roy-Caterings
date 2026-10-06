@@ -91,7 +91,7 @@ const Footer = () => {
           <img 
             src="/images/digital-dictionary-banner.png" 
             alt="Comprehensive Agency Solutions by Digital Dictionary" 
-            className="w-full h-auto animate-blink rounded-md shadow-lg"
+            className="w-full h-auto animate-blink border-none outline-none"
           />
         </a>
       </div>
